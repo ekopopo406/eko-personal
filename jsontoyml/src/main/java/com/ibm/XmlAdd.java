@@ -11,10 +11,10 @@ import org.dom4j.io.SAXReader;
 import org.dom4j.io.XMLWriter;
 import org.junit.Test;
 
-public class attrDemo{
+public class XmlAdd{
 	public static void main(String[] args){
 		try {
-			new attrDemo().exmple();
+			new XmlAdd().exmple();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

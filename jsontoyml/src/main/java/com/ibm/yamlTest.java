@@ -23,7 +23,7 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator;
 public class yamlTest {
 	private YAMLFactory factory = new YAMLFactory();
 
-	public void test(String jsonString) {
+	public void addNewProperties(String jsonString) {
 		try {
 			ObjectMapper mapper = new ObjectMapper(factory);
 			JsonNode jsonNodeTree = new ObjectMapper().readTree(jsonString);
@@ -78,7 +78,7 @@ public class yamlTest {
 	public static void main(String[] args) {
 		URL u = yamlTest.class.getResource("application.yml");
 
-		new yamlTest().test(yamlToJson(u.getPath()));
+		new yamlTest().addNewProperties(yamlToJson(u.getPath()));
 		// try {
 		// //createYaml("D:/123321.yml",yamlToJson(u.getPath()));
 		// } catch (JsonProcessingException e) {
